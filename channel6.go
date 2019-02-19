@@ -11,15 +11,15 @@ func main() {
 
 	go func() {
 		for {
-			time.Sleep(2 * time.Second)
-			channel1 <- 2
+			time.Sleep(1 * time.Second)
+			channel1 <- 1
 		}
 	}()
 
 	go func() {
 		for {
-			time.Sleep(5 * time.Second)
-			channel1 <- 5
+			time.Sleep(3 * time.Second)
+			channel1 <- 3
 		}
 	}()
 

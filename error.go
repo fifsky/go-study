@@ -10,21 +10,20 @@ type Oooops struct {
 	msg  string
 }
 
-func Recover()  {
+func Recover() {
 	defer func() {
 		if re := recover(); re != nil {
-			op := re.(Oooops)
+			op := re.(*Oooops)
 			fmt.Println(op.msg)
 		}
 	}()
 }
 
-
 func main() {
 	//Recover()
 	defer func() {
 		if re := recover(); re != nil {
-			op := re.(Oooops)
+			op := re.(*Oooops)
 			fmt.Println(op.msg)
 		}
 	}()

@@ -23,7 +23,6 @@ func main() {
 	if c == a {
 	}
 
-
 	var bb bool
 	bb = true
 	//Cant not be
@@ -32,13 +31,19 @@ func main() {
 
 	//&& || else
 
-
-
 	switch b {
 	case 1:
+		fmt.Printf("1")
 	case 2:
+		fmt.Printf("2")
+		fallthrough
 	case 3:
+		fmt.Printf("3")
 		//not php break
 		break
+	case 4, 5, 6:
+		fmt.Printf("4, 5, 6")
+	default:
+		fmt.Printf("Default")
 	}
 }

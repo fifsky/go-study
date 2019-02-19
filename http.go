@@ -10,10 +10,7 @@ import (
 )
 
 func main() {
-
-	http := httpclient.NewClient(func(c *httpclient.HttpClient) {
-		c.OpenMonitor = false
-	})
+	http := httpclient.NewClient()
 
 	resp, err := http.Get("https://httpbin.org/get")
 	if err != nil {

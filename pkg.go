@@ -4,12 +4,12 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"app/core/util"
+	"examples/util"
 
-	"github.com/verystar/golib/logger"
+	"github.com/verystar/logger"
 )
 
-type Users struct {
+type JsonTest struct {
 	UserId int    `json:"user_id"`
 	Name   string `json:"name"`
 }
@@ -19,7 +19,7 @@ func main() {
 	m := util.Md5("test")
 	fmt.Println(m)
 
-	h := &Users{
+	h := &JsonTest{
 		UserId: 123,
 		Name:   "test",
 	}
@@ -30,7 +30,7 @@ func main() {
 		fmt.Println(b)
 	}
 
-	hh := &Users{}
+	hh := &JsonTest{}
 	err = json.Unmarshal(b, hh)
 
 	if err != nil {
