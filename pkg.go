@@ -6,7 +6,7 @@ import (
 
 	"examples/util"
 
-	"github.com/verystar/logger"
+	"github.com/goapt/logger"
 )
 
 type JsonTest struct {

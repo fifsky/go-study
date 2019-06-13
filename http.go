@@ -6,7 +6,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/verystar/golib/httpclient"
+	"github.com/goapt/golib/httpclient"
 )
 
 func main() {

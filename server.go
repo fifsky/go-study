@@ -10,7 +10,7 @@ func main() {
 	router := gin.Default()
 
 	router.GET("/", func(c *gin.Context) {
-		c.String(200, "hello verystar")
+		c.String(200, "hello go")
 	})
 
 	router.GET("/user/:name", func(c *gin.Context) {

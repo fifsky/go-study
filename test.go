@@ -9,7 +9,7 @@ func main() {
 
 	var sl1 TSlice
 	var sl2 []map[string]string
-	sl1 = append(sl1, map[string]string{"name": "verystar"})
+	sl1 = append(sl1, map[string]string{"name": "gogogo"})
 	sl2 = sl1
 	fmt.Println(sl1, sl2)
 }

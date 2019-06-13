@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/verystar/golib/task"
+	"github.com/goapt/golib/task"
 )
 
 func main() {

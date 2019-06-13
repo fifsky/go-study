@@ -59,19 +59,19 @@ func main() {
 	type TMap map[string]string
 	type TSlice []map[string]string
 
-	var s1 TString = "verystar"
+	var s1 TString = "go"
 	var s2 string
 	s2 = s1
 	fmt.Println(s1, s2)
 
-	var m1 TMap = TMap{"name": "verystar"}
+	var m1 TMap = TMap{"name": "go"}
 	var m2 map[string]string
 	m2 = m1
 	fmt.Println(m1, m2)
 
 	var sl1 TSlice
 	var sl2 []map[string]string
-	sl1 = append(sl1, map[string]string{"name": "verystar"})
+	sl1 = append(sl1, map[string]string{"name": "go"})
 	sl2 = sl1
 	fmt.Println(sl1, sl2)
 }
